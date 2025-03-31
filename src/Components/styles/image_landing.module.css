@@ -1,0 +1,73 @@
+/* Background Image */
+.backgroundImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark Overlay for Readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Content Centering */
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+/* Header Styling */
+.header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.text {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* Donate Button */
+.donateBtn {
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.donateBtn:hover {
+  background-color: #e68900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .donateBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

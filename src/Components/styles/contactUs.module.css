@@ -1,0 +1,171 @@
+/* General container for page */
+.container {
+  background: linear-gradient(to bottom, #f0f4f8 45%, white 55%);
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding-top: 3%;
+  font-family: 'Georgia', serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #2c3e50;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.header:before,
+.header:after {
+  background-color: #16a085;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  width: 18vw;
+}
+
+.header:before {
+  right: 1.5em;
+  margin-left: -50%;
+}
+
+.header:after {
+  left: 1.5em;
+  margin-right: -50%;
+}
+
+/* Text Section */
+.text {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #2c3e50;
+  line-height: 1.8;
+  padding: 0% 10%;
+  margin-bottom: 30px;
+}
+
+/* Contact Us Form Section */
+.contactUs {
+  padding: 5% 10%;
+}
+
+.inheader {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #2c3e50;
+}
+
+.inpara {
+  text-align: center;
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: bolder;
+}
+
+/* Form Styling */
+.formContainer {
+  text-align: center;
+  padding: 5% 10%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, #e8e8e8 45%);
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Details Section */
+.details {
+  padding: 5% 10%;
+}
+
+.incontent {
+  line-height: 2;
+  font-size: 16px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Footer Section */
+.footer {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footerText {
+  font-size: 14px;
+  color: #b0bec5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 32px;
+  }
+
+  .header:before,
+  .header:after {
+    width: 12vw;
+  }
+
+  .contactUs {
+    padding: 5% 8%;
+  }
+
+  .text {
+    padding: 0% 8%;
+    font-size: 16px;
+  }
+
+  .inheader {
+    font-size: 28px;
+  }
+
+  .formContainer {
+    padding: 5% 8%;
+  }
+
+  .incontent {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header {
+    font-size: 26px;
+  }
+
+  .header:before,
+  .header:after {
+    width: 10vw;
+  }
+
+  .contactUs {
+    padding: 7% 5%;
+  }
+
+  .text {
+    font-size: 14px;
+    padding: 0% 5%;
+  }
+
+  .inheader {
+    font-size: 24px;
+  }
+
+  .formContainer {
+    padding: 5% 5%;
+  }
+
+  .incontent {
+    font-size: 12px;
+  }
+}

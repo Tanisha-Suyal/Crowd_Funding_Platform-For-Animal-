@@ -1,0 +1,111 @@
+/* Container for Image and Title Section */
+.headerSection {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-bottom: 2px solid #ddd; /* Adds a nice border under the header */
+}
+
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: normal;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for Slideshow Images */
+.container {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  position: relative;
+  max-width: 100%; /* Ensure the container takes up the full available width */
+}
+
+.myactive {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Limit the height to avoid excessive image size */
+  object-fit: contain; /* Ensure the image covers the area without stretching */
+  margin: 0 auto; /* Center the image */
+  animation: fadeIn 1s;
+}
+
+.mynone {
+  display: none;
+  animation: fadeOut 1s;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1125px) {
+  .header {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 461px) and (max-width: 935px) {
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 460px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 289px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}

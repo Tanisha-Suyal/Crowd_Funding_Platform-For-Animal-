@@ -1,0 +1,9 @@
+{
+  "short_name": "Animal Support",
+  "name": "Animal Crowdfunding - Help Rescue & Shelter Animals",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#15d7b4",
+  "background_color": "#ffffff"
+}

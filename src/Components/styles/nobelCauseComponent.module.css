@@ -1,0 +1,96 @@
+/* Main container styling */
+.container {
+  padding: 6% 8%;
+  text-align: center;
+  background: linear-gradient(to right, #fff5e6, #f3f4f9); /* Soft gradient */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Header styling */
+.header {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 5px;
+  background: #16a085; /* Green underline */
+  transform: translateX(-50%);
+}
+
+/* Paragraph styling */
+.para {
+  font-size: 16px;
+  color: #34495e;
+  line-height: 1.8;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+  padding: 0 15%;
+}
+
+/* Image styling */
+.image {
+  border: 8px solid #16a085; /* Bold border for visual appeal */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px; /* Make the image responsive */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 5% 6%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 36px; /* Smaller font for mobile */
+  }
+
+  .para {
+    font-size: 14px;
+    padding: 0 10%; /* Less padding for smaller screens */
+  }
+
+  .image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 30px; /* Even smaller font for small mobile devices */
+  }
+
+  .para {
+    font-size: 13px;
+    padding: 0 5%;
+  }
+
+  .image {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
